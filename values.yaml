@@ -24,4 +24,4 @@ backend:
     repository: onekeys/backend
     tag: 24
     pullPolicy: IfNotPresent
-  dbHost: postgres-service.helm-deployment.svc.cluster.local
+  dbHost: postgres-service

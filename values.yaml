@@ -1,0 +1,27 @@
+frontend:
+  replicaCount: 1
+  image:
+    repository: onekeys/frontend
+    tag: 24
+    pullPolicy: IfNotPresent
+  backendUrl: backend-service.helm-deployment.svc.cluster.local
+
+
+postgres:
+  replicaCount: 1
+  image:
+    repository: onekeys/postgres
+    tag: 24
+    pullPolicy: IfNotPresent
+  database:
+    name: perntodo
+  storage:
+    size: 1Gi
+
+backend:
+  replicaCount: 1
+  image:
+    repository: onekeys/backend
+    tag: 24
+    pullPolicy: IfNotPresent
+  dbHost: postgres-service.helm-deployment.svc.cluster.local

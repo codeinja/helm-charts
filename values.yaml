@@ -4,7 +4,7 @@ frontend:
     repository: onekeys/frontend
     tag: 33
     pullPolicy: IfNotPresent
-  backendUrl: backend-service.helm-deployment.svc.cluster.local
+  backendUrl: 10.101.127.42
 
 
 postgres:
@@ -24,4 +24,4 @@ backend:
     repository: onekeys/backend
     tag: 33
     pullPolicy: IfNotPresent
-  dbHost: 10.97.174.112
+  dbHost: 10.107.221.253

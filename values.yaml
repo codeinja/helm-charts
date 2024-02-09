@@ -16,7 +16,7 @@ postgres:
   database:
     name: perntodo
   storage:
-    size: 1Gi
+    size: 3Gi
 
 backend:
   replicaCount: 1

@@ -40,3 +40,10 @@ spec:
               mountPath: /var/lib/postgresql/data
           ports:
             - containerPort: 5432
+      tolerations:
+        - key: "node-role.kubernetes.io/control-plane"
+          effect: "NoSchedule"
+          operator: "Exists"
+        - key: "node.kubernetes.io/disk-pressure"
+          effect: "NoSchedule"
+          operator: "Exists"

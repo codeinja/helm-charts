@@ -30,10 +30,3 @@ spec:
                   key: POSTGRES_PASSWORD
           ports:
             - containerPort: 5000
-      tolerations:
-        - key: "node-role.kubernetes.io/control-plane"
-          effect: "NoSchedule"
-          operator: "Exists"
-        - key: "node.kubernetes.io/disk-pressure"
-          effect: "NoSchedule"
-          operator: "Exists"

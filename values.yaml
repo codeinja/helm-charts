@@ -24,4 +24,4 @@ backend:
     repository: onekeys/backend
     tag: 47
     pullPolicy: IfNotPresent
-  dbHost: 10.97.126.119
+  dbHost: 10.104.154.119
